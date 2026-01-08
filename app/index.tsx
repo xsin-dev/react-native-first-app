@@ -183,13 +183,13 @@ export default function Tasbix() {
         }}
       >
         <TouchableOpacity>
-          <View style={styles.bottomIcon}>
+          <View style={styles.bottomButton}>
             <AntDesign name="sound" size={28} color="white" />
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity>
-          <View style={styles.bottomIcon}>
+          <View style={styles.bottomButton}>
             <AntDesign name="shake" size={28} color="white" />
           </View>
         </TouchableOpacity>
@@ -198,7 +198,7 @@ export default function Tasbix() {
         <TouchableOpacity onPress={() => setModalVisible(true)}>
           <View
             style={{
-              ...styles.bottomIcon,
+              ...styles.bottomButton,
               width: 110,
               backgroundColor: isDark ? "#eab30833" : "#614a0789",
               borderWidth: 1,
@@ -212,13 +212,13 @@ export default function Tasbix() {
         </TouchableOpacity>
 
         <TouchableOpacity>
-          <View style={styles.bottomIcon}>
+          <View style={styles.bottomButton}>
             <EvilIcons name="question" size={40} color="white" />
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => setIsDark((prev) => !prev)}>
-          <View style={styles.bottomIcon}>
+          <View style={styles.bottomButton}>
             <AntDesign name="moon" size={28} color="white" />
           </View>
         </TouchableOpacity>
@@ -290,6 +290,7 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 50,
     backgroundColor: "#0F1B2B",
+    display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
