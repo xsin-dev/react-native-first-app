@@ -29,7 +29,7 @@ export default function Tasbix() {
         paddingTop: 8,
       }}
     >
-      {/* Top div */}
+      {/* top */}
       <View
         style={{
           flexDirection: "row",
@@ -104,7 +104,7 @@ export default function Tasbix() {
             </Text>
           </View>
 
-          {/* Reload buttonlar */}
+          {/* reload buttonlar */}
           <View
             style={{
               flexDirection: "row",
@@ -138,7 +138,7 @@ export default function Tasbix() {
             </TouchableOpacity>
           </View>
 
-          {/* Increment button */}
+          {/* inc button */}
           <TouchableOpacity
             activeOpacity={0.7}
             onPress={() => setCount(count + 1)}
@@ -169,7 +169,7 @@ export default function Tasbix() {
         </View>
       </View>
 
-      {/* Bottom divlar */}
+      {/* bottom divlar */}
       <View
         style={{
           position: "absolute",
@@ -194,7 +194,7 @@ export default function Tasbix() {
           </View>
         </TouchableOpacity>
 
-        {/* Ro'yxat */}
+        {/* ro'yxat */}
         <TouchableOpacity onPress={() => setModalVisible(true)}>
           <View
             style={{
@@ -224,7 +224,7 @@ export default function Tasbix() {
         </TouchableOpacity>
       </View>
 
-      {/* Modal */}
+      {/* modal */}
       <Modal
         animationType="slide"
         transparent={true}
