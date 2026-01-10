@@ -196,7 +196,7 @@ export default function Tasbix() {
         </TouchableOpacity>
 
         {/* ro'yxat */}
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <View
             style={{
               ...styles.bottomButton,
@@ -206,11 +206,11 @@ export default function Tasbix() {
               borderColor: "#eab30888",
             }}
           >
-            <Link href="/quran" style={{ color: "#eab308", fontWeight: "600" }}>
+            <Text style={{ color: "#eab308", fontWeight: "600" }}>
               Quran
-            </Link>
+            </Text>
           </View>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         <TouchableOpacity>
           <View style={styles.bottomButton}>
@@ -247,7 +247,7 @@ export default function Tasbix() {
               padding: 20,
               borderTopLeftRadius: 20,
               borderTopRightRadius: 20,
-              paddingTop: 50,
+              paddingTop: 80,
             }}
           >
             <TextInput

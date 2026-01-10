@@ -17,7 +17,7 @@ interface Verse {
   text: string;
 }
 
-export default function QuranList() {
+export default function Quran() {
   const {
     data = [],
     isLoading,
