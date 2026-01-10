@@ -1,6 +1,7 @@
 import AntDesign from "@expo/vector-icons/AntDesign";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import SimpleLineIcons from "@expo/vector-icons/SimpleLineIcons";
+import { Link } from "expo-router";
 import { useState } from "react";
 import {
   Alert,
@@ -54,7 +55,7 @@ export default function Tasbix() {
           {headerText}
         </Text>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => setModalVisible(true)}>
           <View style={styles.headerButton}>
             <AntDesign name="down" size={20} color="white" />
           </View>
@@ -195,7 +196,7 @@ export default function Tasbix() {
         </TouchableOpacity>
 
         {/* ro'yxat */}
-        <TouchableOpacity onPress={() => setModalVisible(true)}>
+        <TouchableOpacity>
           <View
             style={{
               ...styles.bottomButton,
@@ -205,9 +206,9 @@ export default function Tasbix() {
               borderColor: "#eab30888",
             }}
           >
-            <Text style={{ color: "#eab308", fontWeight: "600" }}>
-              O'zgartirish
-            </Text>
+            <Link href="/quran" style={{ color: "#eab308", fontWeight: "600" }}>
+              Quran
+            </Link>
           </View>
         </TouchableOpacity>
 
@@ -234,7 +235,7 @@ export default function Tasbix() {
         <TouchableOpacity
           style={{
             flex: 1,
-            justifyContent: "flex-end",
+            justifyContent: "flex-start",
             backgroundColor: "rgba(0,0,0,0.4)",
           }}
           activeOpacity={1}
@@ -246,7 +247,7 @@ export default function Tasbix() {
               padding: 20,
               borderTopLeftRadius: 20,
               borderTopRightRadius: 20,
-              paddingBottom: 50,
+              paddingTop: 50,
             }}
           >
             <TextInput
